@@ -53,13 +53,18 @@ Form.Control {
   margin-top: 2em;
 }
 
-.navBar > Nav.Item > Link {
-  margin-right: 3em;
+.spaziaturaLink Link {
+  margin-right: 10px;
 }
 
 .foto {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 300px;
   aspect-ratio: 1/1;
+  border-radius: 4em;
+  margin-top: 2em;
+}
+
+.profilo {
   border-radius: 100%;
 }
