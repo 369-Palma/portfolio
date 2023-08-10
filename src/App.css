@@ -61,10 +61,10 @@ Form.Control {
   width: 200px;
   height: 300px;
   aspect-ratio: 1/1;
-  border-radius: 4em;
+
   margin-top: 2em;
 }
 
 .profilo {
-  border-radius: 100%;
+  border-radius: 4em;
 }
