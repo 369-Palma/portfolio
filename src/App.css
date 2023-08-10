@@ -1,3 +1,9 @@
+html,
+body {
+  background-color: #101114;
+  color: seashell;
+}
+
 .App {
   text-align: center;
 }
@@ -46,15 +52,30 @@ Form.Control {
 }
 
 .navBar {
+  background-color: #283653 !important;
+  border: 1 solid seashell !important;
+  color: seashell !important;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 3em;
   margin-top: 2em;
+  padding-left: 2em;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+  color: rgb(3, 226, 152);
+  /* border: 1px solid rgb(3, 226, 152) */
 }
 
 .spaziaturaLink Link {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .foto {
@@ -67,4 +88,17 @@ Form.Control {
 
 .profilo {
   border-radius: 4em;
+}
+
+.icone:hover {
+  color: rgb(3, 226, 152);
+  transform: scale(1);
+}
+
+.campoForm:focus {
+  border: 4px solid rgb(5, 255, 172);
+}
+
+.bordo {
+  border: 0.5px solid rgb(5, 255, 172);
 }

@@ -7,8 +7,11 @@ const NavBar = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <Navbar expand="md" className="bg-body-tertiary d-flex mb-3">
-      <Container className="d-flex flex-row align-self-center">
+    <Navbar
+      expand="md"
+      className=" d-flex navbar navbar-expand-md navbar-dark pb-3"
+    >
+      <Container className="d-flex flex-row ">
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setShowLinks(!showLinks)}
@@ -63,30 +66,6 @@ const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    /*  <Nav
-      className="navBar w-75 mx-auto flex-nowrap"
-      variant="pills"
-      defaultActiveKey="/"
-    >
-      <Nav.Item className="spaziaturaLink">
-        <Link to="/">HOME </Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link to="/about" eventKey="link-1">
-          ABOUT
-        </Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link to="/porfolio" eventKey="link-2">
-          WORKS
-        </Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Link to="/contacts" eventKey="link-3">
-          CONTACTS
-        </Link>
-      </Nav.Item>
-    </Nav> */
   );
 };
 export default NavBar;

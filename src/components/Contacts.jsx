@@ -22,43 +22,56 @@ const Contacts = () => {
           <Link
             to="mailto:palmaiacobelli92@gmail.com"
             target="_blank"
-            className="me-4 text-reset mb-md-3 fs-4"
+            className=" me-4 text-reset mb-md-3 fs-4"
           >
-            <FontAwesomeIcon icon={faGoogle} />
+            <FontAwesomeIcon className="icone" icon={faGoogle} />
           </Link>
-          <Link to="#" target="_blank" className="me-4 text-reset mb-md-3 fs-4">
-            <FontAwesomeIcon icon={faInstagram} />
+          <Link
+            to="#"
+            target="_blank"
+            className=" me-4 text-reset mb-md-3 fs-4"
+          >
+            <FontAwesomeIcon className="icone" icon={faInstagram} />
           </Link>
           <Link
             to="https://www.linkedin.com/in/palma-iacobelli-482521185/?locale=it_IT"
             target="_blank"
-            className="me-4 text-reset mb-md-3 fs-4"
+            className=" me-4 text-reset mb-md-3 fs-4"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon className="icone" icon={faLinkedin} />
           </Link>
           <Link
             to="https://github.com/369-Palma"
             target="_blank"
-            className="me-4 text-reset mb-md-3 fs-4 "
+            className=" me-4 text-reset mb-md-3 fs-4 "
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon className="icone" icon={faGithub} />
           </Link>
         </Col>
         <Col xs={12} md={9} className="mx-auto">
-          <Form className="p-5 border">
+          <Form className="p-5 bordo">
             <Form.Group className="mb-4" controlId="formName">
               <Form.Label className="mb-3">Name:</Form.Label>
-              <Form.Control type="name" placeholder="Enter name" />
+              <Form.Control
+                className="campoForm"
+                type="name"
+                placeholder="Enter name"
+              />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formEmail">
               <Form.Label className="mb-3">Email:</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control
+                type="email"
+                className="campoForm"
+                placeholder="Enter email"
+              />
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formMessage">
               <Form.Label className="mb-3">Message:</Form.Label>
               <Form.Control
+                className="campoForm"
                 type="textarea"
                 Row={3}
                 placeholder="Enter message"
