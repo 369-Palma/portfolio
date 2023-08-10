@@ -6,41 +6,45 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { Col, Row, Form, Button } from "react-bootstrap";
+import { Col, Row, Form, Button, Container } from "react-bootstrap";
 
 const Contacts = () => {
   return (
-    <>
+    <Container className="my-auto mx-auto">
       <h3> Questions? </h3>
       <h1> Contact me </h1>
-      <Row className="mx-auto D-FLEX text-center">
-        <Col xs={12} md={6} className="d-flex flex-row mx-auto my-5">
+      <Row className="mx-auto D-FLEX text-center mt-5">
+        <Col
+          xs={12}
+          md={3}
+          className="d-flex flex-row flex-md-column mx-auto justify-content-center flex-md-start flex-md-justify-content-space-evenly my-md-auto h-100 mb-3"
+        >
           <Link
             to="mailto:palmaiacobelli92@gmail.com"
             target="_blank"
-            className="me-4 text-reset"
+            className="me-4 text-reset mb-md-3 fs-4"
           >
             <FontAwesomeIcon icon={faGoogle} />
           </Link>
-          <Link to="#" target="_blank" className="me-4 text-reset">
+          <Link to="#" target="_blank" className="me-4 text-reset mb-md-3 fs-4">
             <FontAwesomeIcon icon={faInstagram} />
           </Link>
           <Link
             to="https://www.linkedin.com/in/palma-iacobelli-482521185/?locale=it_IT"
             target="_blank"
-            className="me-4 text-reset"
+            className="me-4 text-reset mb-md-3 fs-4"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </Link>
           <Link
             to="https://github.com/369-Palma"
             target="_blank"
-            className="me-4 text-reset"
+            className="me-4 text-reset mb-md-3 fs-4 "
           >
             <FontAwesomeIcon icon={faGithub} />
           </Link>
         </Col>
-        <Col xs={12} md={6} className="mx-2">
+        <Col xs={12} md={9} className="mx-auto">
           <Form className="p-5 border">
             <Form.Group className="mb-4" controlId="formName">
               <Form.Label className="mb-3">Name:</Form.Label>
@@ -67,7 +71,7 @@ const Contacts = () => {
           </Form>
         </Col>
       </Row>
-    </>
+    </Container>
   );
 };
 
