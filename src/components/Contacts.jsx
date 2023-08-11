@@ -10,7 +10,7 @@ import { Col, Row, Form, Button, Container } from "react-bootstrap";
 
 const Contacts = () => {
   return (
-    <Container className="my-auto mx-auto">
+    <Container className="boxAbout my-auto mx-auto">
       <h3> Questions? </h3>
       <h1> Contact me </h1>
       <Row className="mx-auto D-FLEX text-center mt-5">
