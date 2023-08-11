@@ -102,3 +102,22 @@ Form.Control {
 .bordo {
   border: 0.5px solid rgb(5, 255, 172);
 }
+
+Button {
+  color: rgb(3, 226, 152);
+}
+
+p {
+  line-height: 1.9em;
+}
+
+/* ABOUT */
+.iconeSkills {
+  margin: 0.5em;
+}
+
+.iconeSkills img {
+  width: 65px;
+  height: 65px;
+  aspect-ratio: 1/1;
+}
