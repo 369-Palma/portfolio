@@ -89,13 +89,15 @@ Form.Control {
   height: 200px;
   aspect-ratio: 1/1;
   border-radius: 8em;
-  box-shadow: 1px 1px 4px 2px rgb(5 255 172 / 39%);
+  box-shadow: 1px 1px 4px 2px rgb(5, 255, 172, 0.39);
   margin-top: 2em;
 }
 
 .profilo {
   border-radius: 4em;
 }
+
+/*  CONTACT PAGE */
 
 .icone:hover {
   color: rgb(3, 226, 152);
@@ -107,7 +109,25 @@ Form.Control {
 }
 
 .bordo {
-  border: 0.5px solid rgb(5, 255, 172);
+  animation: BordoColorato 3s linear infinite;
+}
+
+@keyframes BordoColorato {
+  0% {
+    border: 0.5px solid rgb(5, 255, 172);
+  }
+  25% {
+    border: 0.5px solid rgb(11, 238, 219);
+  }
+  50% {
+    border: 0.5px solid rgb(18, 144, 247);
+  }
+  75% {
+    border: 0.5px solid rgb(11, 238, 219);
+  }
+  100% {
+    border: 0.5px solid rgb(5, 255, 172);
+  }
 }
 
 Button {
@@ -174,9 +194,9 @@ p {
   overflow: hidden;
 
   padding-left: 40px;
-  -webkit-animation: AlternateText 12s linear infinite 0s;
-  -ms-animation: AlternateText 12s linear infinite 0s;
-  animation: AlternateText 12s linear infinite 0s;
+  -webkit-animation: AlternateText 12s ease-in infinite 0s;
+  -ms-animation: AlternateText 12s ease-in infinite 0s;
+  animation: AlternateText 12s ease-in infinite 0s;
 }
 .frasi i:nth-child(2) {
   -webkit-animation-delay: 3s;
@@ -206,22 +226,28 @@ p {
     transform: translateY(-30px);
   }
   5% {
-    opacity: 1;
+    opacity: 0;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   17% {
-    opacity: 1;
+    opacity: 0.5;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
   20% {
-    opacity: 0;
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  25% {
+    opacity: 1;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
   30% {
-    opacity: 0;
+    opacity: 0.5;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
