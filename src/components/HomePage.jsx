@@ -1,20 +1,27 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import cv1min from "../assets/images/cv1min.jpg";
 const HomePage = () => {
   return (
-    <Row className="my-auto d-flex justify-content-center">
-      <Col xs={12} md={5} className="my-md-auto mb-4">
-        <h1>
-          {" "}
-          Hi, <br />
-          I'm Palma Iacobelli <br />
-          Jr. web developer{" "}
-        </h1>
-      </Col>
-      <Col xs={12} md={5} className="foto mx-auto my-auto">
-        <img src={cv1min} className="w-100 profilo my-5" alt="foto Palma" />
-      </Col>
-    </Row>
+    <Container className="content">
+      <Row className="mx-auto content__containercontent d-flex flex-column flex-md-row">
+        <Col xs={12} md={6} className="d-flex flex-column mx-auto my-auto">
+          <p>
+            Hi, <br />
+            I'm Palma Iacobelli{" "}
+          </p>
+          <span className="frasi d-flex">
+            Jr.
+            <i> Web Developer</i>
+            <i> Front end Developer</i>
+            <i> Back end Developer</i>
+            <i> Forester</i>
+          </span>
+        </Col>
+        <Col>
+          <img src={cv1min} className="foto" alt="foto Palma" />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 export default HomePage;

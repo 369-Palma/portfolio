@@ -13,7 +13,7 @@ const About = () => {
     <Container className="d-flex flex-column justify-content-center align-items-center">
       <Row>
         <Col>
-          <h1>About</h1>
+          <h1 className="my-4">About</h1>
           <p className="textAbout ">
             Determined, solution oriented, passionate about nature and
             innovation, and driven by curiosity. <br /> I firmly believe in
