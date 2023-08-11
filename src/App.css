@@ -115,8 +115,7 @@ Button {
   color: rgb(3, 226, 152);
 }
 
-p,
-.frasi {
+p {
   line-height: 1.9em;
   font-size: x-large;
 }
@@ -137,6 +136,9 @@ p,
   .iconeSkills {
     flex: 0 0 calc(33.333% - 1em);
   }
+  .frasi {
+    font-size: x-large;
+  }
 }
 
 @media (max-width: 767px) {
@@ -149,10 +151,16 @@ p,
   .textAbout {
     font-size: larger;
   }
+  .frasi {
+    font-size: large;
+  }
 }
 
 /* HOME */
-
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .frasi {
   text-indent: 10px;
   margin-right: 23%;
