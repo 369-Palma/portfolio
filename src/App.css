@@ -137,9 +137,6 @@ p,
   .iconeSkills {
     flex: 0 0 calc(33.333% - 1em);
   }
-  .textAbout {
-    font-size: x-large;
-  }
 }
 
 @media (max-width: 767px) {
@@ -158,14 +155,17 @@ p,
 
 .frasi {
   text-indent: 10px;
-  margin-right: 25%;
-  margin-left: 25%;
+  margin-right: 23%;
+  margin-left: 23%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(5, 255, 172);
 }
 .frasi i {
   position: absolute;
   opacity: 0;
   overflow: hidden;
-  color: rgb(5, 255, 172);
+
   padding-left: 40px;
   -webkit-animation: AlternateText 12s linear infinite 0s;
   -ms-animation: AlternateText 12s linear infinite 0s;
