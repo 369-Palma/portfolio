@@ -30,7 +30,7 @@ body {
   }
 }
 
-/* @media (min-width: 1445px) {
+@media (min-width: 1445px) {
   .descrizione p {
     margin-top: 1em;
     margin-bottom: 4em;
@@ -38,7 +38,7 @@ body {
 
   .containerAbout {
     padding-top: 3%;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
   }
   .boxAbout {
     padding: 0;
@@ -46,7 +46,11 @@ body {
   .boxImg {
     margin-top: 5em;
   }
-} */
+
+  .boxContacts {
+    margin-top: 3rem;
+  }
+}
 
 h2 {
   margin-bottom: 2em;

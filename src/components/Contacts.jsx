@@ -36,7 +36,7 @@ const Contacts = () => {
   };
 
   return (
-    <Container className="boxContacts my-auto mx-auto py-3">
+    <Container className="boxContacts  mx-auto py-3">
       <h3> Questions? </h3>
       <h1> Contact me </h1>
       <Row className="mx-auto d-flex align-items-center justify-content-center text-center mt-5">
