@@ -272,50 +272,7 @@ p {
   animation-delay: 9s;
   color: rgb(5, 255, 172);
 }
-/* @-webkit-keyframes AlternateText {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  5% {
-    opacity: 0;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  17% {
-    opacity: 0.5;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
 
-  25% {
-    opacity: 1;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  30% {
-    opacity: 0.5;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  100% {
-    opacity: 0;
-  }
-} */
 @keyframes AlternateText {
   0% {
     opacity: 0;
@@ -365,4 +322,45 @@ p {
   100% {
     transform: trasnlate(300px);
   }
+}
+
+/*  PORTFOLIO */
+.containerWorks {
+  background-color: #00030a9a;
+}
+
+.bottomCard {
+  color: seashell;
+  background: rgb(102, 158, 218);
+  background: linear-gradient(
+    155deg,
+    rgba(102, 158, 218, 1) 7%,
+    rgba(46, 67, 89, 1) 31%,
+    rgba(0, 1, 1, 0.2861519607843137) 75%,
+    rgba(31, 188, 189, 0.4514180672268907) 94%
+  );
+}
+
+/* @keyframes ShowInfo {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-300px);
+  }
+}
+
+.bottomCard:hover {
+  animation: ShowInfo 2s linear 1;
+} */
+
+.mini {
+  font-size: medium;
+}
+
+.carta {
+  width: 20rem;
 }
