@@ -17,18 +17,22 @@ const Portfolio = () => {
               <Card className="carta mb-3">
                 <Card.Img variant="top" src={sfondo} />
                 <Card.Body className="bottomCard">
-                  <Card.Title>Art gallery</Card.Title>
-                  {/*  <p>Showcase of an Apulian artist's gallery</p> */}
-                  <p className="mini">
-                    Redux, Javascript, Java, Spring Boot, PostgreSQL
-                  </p>
+                  <Card.Title className="dettagli">Art gallery</Card.Title>
+                  <div className="info">
+                    <p className="pt-5">
+                      Showcase of an Apulian artist's gallery
+                    </p>
+                    <p className="mini">
+                      Redux, Javascript, Java, Spring Boot, PostgreSQL
+                    </p>
 
-                  <Link
-                    to="https://github.com/stars/369-Palma/lists/showcase-website-art"
-                    target="_blank"
-                  >
-                    <Button variant="primary">Repo</Button>
-                  </Link>
+                    <Link
+                      to="https://github.com/stars/369-Palma/lists/showcase-website-art"
+                      target="_blank"
+                    >
+                      <Button className="bottone">Repo</Button>
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>
@@ -37,18 +41,22 @@ const Portfolio = () => {
                 <Card.Img variant="top" src={sfondo} />
                 <Card.Body className="bottomCard">
                   <Card.Title>EasyVacanza</Card.Title>
+                  <div className="info">
+                    <p className="pt-5">
+                      {" "}
+                      Website for searching and booking holidays
+                    </p>
+                    <p className="mini">
+                      React, Javascript, Java, Spring Boot, PostgreSQL
+                    </p>
 
-                  {/*  <p>Website for searching and booking holidays</p> */}
-                  <p className="mini">
-                    React, Javascript, Java, Spring Boot, PostgreSQL
-                  </p>
-
-                  <Link
-                    to="https://github.com/stars/369-Palma/lists/capstone-project"
-                    target="_blank"
-                  >
-                    <Button variant="primary">Repo</Button>
-                  </Link>
+                    <Link
+                      to="https://github.com/stars/369-Palma/lists/capstone-project"
+                      target="_blank"
+                    >
+                      <Button className="bottone">Repo</Button>
+                    </Link>
+                  </div>
                 </Card.Body>
               </Card>
             </Col>

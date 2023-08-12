@@ -316,12 +316,12 @@ p {
   0% {
     transform: translate(-100px);
   }
-  50% {
+  100% {
     transform: translate(0px);
   }
-  100% {
-    transform: trasnlate(300px);
-  }
+  /*   100% {
+    transform: translate(300px);
+  } */
 }
 
 /*  PORTFOLIO */
@@ -341,26 +341,56 @@ p {
   );
 }
 
-/* @keyframes ShowInfo {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-100px);
-  }
-  100% {
-    transform: translateY(-300px);
-  }
-}
-
-.bottomCard:hover {
-  animation: ShowInfo 2s linear 1;
-} */
-
 .mini {
   font-size: medium;
 }
 
 .carta {
-  width: 20rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 255, 172, 0.445);
+  color: black;
+  font-weight: bold;
+  transition: bottom 1s ease-in-out;
+}
+
+.bottone {
+  background-color: seashell;
+  color: black;
+  border: 2px solid rgb(5, 255, 172) !important;
+}
+
+.bottone:hover {
+  background-color: rgb(5, 255, 172) !important;
+  color: black;
+  border-color: 2 solid black !important;
+}
+
+.carta:hover .info {
+  bottom: 0;
+}
+@keyframes ShowInfo {
+  0% {
+    transform: translateY(0px);
+    padding-top: 0em;
+  }
+  50% {
+    transform: translateY(20em);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-40em);
+    background-color: rgba(5, 255, 172, 0.274);
+    color: black;
+
+    opacity: 1;
+  }
 }
