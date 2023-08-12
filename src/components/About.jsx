@@ -10,10 +10,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container className="d-flex flex-column justify-content-center align-items-center">
+    <Container className="containerAbout d-flex flex-column justify-content-center align-items-center">
       <Row>
-        <Col>
-          <h1 className="my-4">About</h1>
+        <Col className="mb-3 px-4">
+          <h1>About</h1>
           <p className="textAbout ">
             Determined, solution oriented, passionate about nature and
             innovation, and driven by curiosity. <br /> I firmly believe in
@@ -23,8 +23,8 @@ const About = () => {
           </p>
         </Col>
       </Row>
-      <Row className="boxImg mx-5 d-flex flex-row  my-5">
-        <h2> Technical skills </h2>
+      <Row className="boxImg mx-5 d-flex flex-row my-auto">
+        <h3 className="sottotitoli mb-5"> Technical skills </h3>
         <Col md={3} lg={3} className="iconeSkills">
           <img src={html5} alt="logo html5" />
         </Col>
