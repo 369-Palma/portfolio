@@ -1,9 +1,13 @@
 html,
 body {
-  background-color: #101114;
+  /* background-color: #101114; */
   color: seashell;
   width: 100dvw;
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/images/sfondoFigo.png");
+  background-color: #242323;
 }
 h2 {
   margin-bottom: 2em;
@@ -165,21 +169,21 @@ p {
     flex: 0 0 calc(50% - 1em);
   }
   .boxImg {
-    justify-content: center;
+    justify-content: left;
   }
   .textAbout {
     font-size: larger;
   }
   .frasi {
-    font-size: large;
+    font-size: larger;
   }
 }
 
 /* HOME */
-.content {
+/* .content {
   margin-top: auto;
   margin-bottom: auto;
-}
+} */
 .frasi {
   text-indent: 10px;
   margin-right: 23%;

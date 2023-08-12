@@ -10,7 +10,7 @@ import { Col, Row, Form, Button, Container } from "react-bootstrap";
 
 const Contacts = () => {
   return (
-    <Container className="boxAbout my-auto mx-auto">
+    <Container className="boxAbout my-auto mx-auto py-3">
       <h3> Questions? </h3>
       <h1> Contact me </h1>
       <Row className="mx-auto D-FLEX text-center mt-5">
@@ -48,7 +48,7 @@ const Contacts = () => {
             <FontAwesomeIcon className="icone" icon={faGithub} />
           </Link>
         </Col>
-        <Col xs={12} md={9} className="mx-auto">
+        <Col xs={12} md={9} className="mx-auto mb-xs-3">
           <Form className="p-5 bordo">
             <Form.Group className="mb-4" controlId="formName">
               <Form.Label className="mb-3">Name:</Form.Label>
