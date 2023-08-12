@@ -8,6 +8,10 @@ body {
   padding: 0;
   background-image: url("./assets/images/sfondoFigo.png");
   background-color: #242323;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 h2 {
   margin-bottom: 2em;
@@ -169,8 +173,10 @@ p {
   .iconeSkills {
     flex: 0 0 calc(33.333% - 1em);
   }
-  .frasi {
-    font-size: x-large;
+
+  .frasi,
+  .testo {
+    font-size: xx-large;
   }
 }
 
@@ -204,7 +210,7 @@ p {
   opacity: 0;
   overflow: hidden;
 
-  padding-left: 40px;
+  padding-left: 50px;
   -webkit-animation: AlternateText 12s ease-in infinite 0s;
   -ms-animation: AlternateText 12s ease-in infinite 0s;
   animation: AlternateText 12s ease-in infinite 0s;
@@ -227,7 +233,7 @@ p {
   animation-delay: 9s;
   color: rgb(5, 255, 172);
 }
-@-webkit-keyframes AlternateText {
+/* @-webkit-keyframes AlternateText {
   0% {
     opacity: 0;
   }
@@ -270,7 +276,7 @@ p {
   100% {
     opacity: 0;
   }
-}
+} */
 @keyframes AlternateText {
   0% {
     opacity: 0;

@@ -12,7 +12,7 @@ const About = () => {
   return (
     <Container className="containerAbout d-flex flex-column justify-content-center align-items-center">
       <Row>
-        <Col className="mb-4 px-4">
+        <Col className="mb-4 ">
           <h1>About</h1>
           <p className="textAbout ">
             Determined, solution oriented, passionate about nature and

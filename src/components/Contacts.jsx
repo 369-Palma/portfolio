@@ -4,11 +4,37 @@ import {
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { Col, Row, Form, Button, Container } from "react-bootstrap";
+import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contacts = () => {
+  const inviaEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        `service_d3vhlvl`,
+        `template_j8faovd`,
+        e.target,
+        `3cG7_5IGDFHm5po4E`
+      )
+      .then(
+        (result) => {
+          toast.success("Email sent successfully");
+          console.log(result.text);
+        },
+        (error) => {
+          toast.error("Email not sent");
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <Container className="boxContacts my-auto mx-auto py-3">
       <h3> Questions? </h3>
@@ -49,12 +75,15 @@ const Contacts = () => {
           </Link>
         </Col>
         <Col xs={12} md={10} className="mx-auto mb-xs-3">
-          <Form className="p-5 bordo">
+          <Form onSubmit={inviaEmail} className="p-5 bordo">
             <Form.Group className="mb-4" controlId="formName">
               <Form.Label className="mb-3">Name:</Form.Label>
               <Form.Control
                 className="campoForm"
-                type="name"
+                name="name"
+                required
+                type="text"
+                autoComplete="off"
                 placeholder="Enter name"
               />
             </Form.Group>
@@ -63,6 +92,9 @@ const Contacts = () => {
               <Form.Label className="mb-3">Email:</Form.Label>
               <Form.Control
                 type="email"
+                name="email"
+                required
+                autoComplete="off"
                 className="campoForm"
                 placeholder="Enter email"
               />
@@ -72,8 +104,11 @@ const Contacts = () => {
               <Form.Label className="mb-3">Message:</Form.Label>
               <Form.Control
                 className="campoForm"
-                type="textarea"
-                Row={3}
+                as="textarea"
+                name="message"
+                required
+                autoComplete="off"
+                rows={3}
                 placeholder="Enter message"
               />
             </Form.Group>

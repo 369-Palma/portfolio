@@ -5,7 +5,7 @@ const HomePage = () => {
     <Container className="content my-5">
       <Row className=" mx-auto  content__containercontent d-flex flex-column align-items-center justify-content-center flex-md-row ">
         <Col xs={12} md={6} className="d-flex flex-column mx-auto my-5">
-          <p>
+          <p className="testo">
             Hi, <br />
             I'm Palma Iacobelli{" "}
           </p>

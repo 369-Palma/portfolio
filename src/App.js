@@ -5,6 +5,10 @@ import HomePage from "./components/HomePage";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+
+import React from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Contacts from "./components/Contacts";
 
 function App() {
@@ -16,7 +20,15 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route
+            path="/contacts"
+            element={
+              <>
+                <ToastContainer />
+                <Contacts />
+              </>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>
