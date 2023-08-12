@@ -13,6 +13,41 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
+@media (min-width: 1200px) {
+  .content {
+    margin-left: 10rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .boxImg {
+    padding-top: 3em;
+  }
+  .containerAbout {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+
+/* @media (min-width: 1445px) {
+  .descrizione p {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  .containerAbout {
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+  .boxAbout {
+    padding: 0;
+  }
+  .boxImg {
+    margin-top: 5em;
+  }
+} */
+
 h2 {
   margin-bottom: 2em;
 }

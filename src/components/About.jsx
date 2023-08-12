@@ -11,8 +11,8 @@ import { Container, Row, Col } from "react-bootstrap";
 const About = () => {
   return (
     <Container className="containerAbout d-flex flex-column justify-content-center align-items-center">
-      <Row>
-        <Col className="mb-4 ">
+      <Row className="boxAbout">
+        <Col className="descrizione">
           <h1>About</h1>
           <p className="textAbout ">
             Determined, solution oriented, passionate about nature and
@@ -24,7 +24,7 @@ const About = () => {
         </Col>
       </Row>
       <Row className="boxImg mx-5 d-flex flex-row justify-content-center  my-auto">
-        <h3 className="sottotitoli mb-5"> Technical skills </h3>
+        <h3 className="sottotitoli pb-3"> Technical skills </h3>
         <Col md={3} lg={3} className="iconeSkills">
           <img src={html5} alt="logo html5" />
         </Col>
