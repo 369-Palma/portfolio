@@ -10,26 +10,33 @@ import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Contacts from "./components/Contacts";
+import AllPages from "./components/AllPages";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route
-            path="/contacts"
-            element={
-              <>
-                <ToastContainer />
-                <Contacts />
-              </>
-            }
-          />
-        </Routes>
+        {window.innerWidth <= 767 ? (
+          <AllPages />
+        ) : (
+          <>
+            <NavBar />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route
+                path="/contacts"
+                element={
+                  <>
+                    <ToastContainer />
+                    <Contacts />
+                  </>
+                }
+              />
+            </Routes>
+          </>
+        )}
       </BrowserRouter>
     </div>
   );

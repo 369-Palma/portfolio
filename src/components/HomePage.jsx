@@ -9,7 +9,7 @@ const HomePage = () => {
             Hi, <br />
             I'm Palma Iacobelli{" "}
           </p>
-          <span className="frasi d-flex">
+          <span className="frasi frasi d-flex w-100 text-center py-auto">
             Jr.
             <i> Web Developer</i>
             <i> Front end Developer</i>

@@ -113,7 +113,7 @@ const Contacts = () => {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button className="bottone" type="submit">
               Submit
             </Button>
           </Form>
