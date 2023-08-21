@@ -1,5 +1,7 @@
 import { Col, Row, Container } from "react-bootstrap";
 import cv1min from "../assets/images/cv1min.jpg";
+import resume from "../assets/cv/CV Palma Iacobelli Developer_Eng.pdf";
+
 const HomePage = () => {
   return (
     <Container className="content ">
@@ -16,7 +18,16 @@ const HomePage = () => {
             <i> Back end Developer</i>
             <i> Forester</i>
           </span>
+
+          <a
+            className="bottoneCv mx-auto mt-5 "
+            href={resume}
+            download="Resume_Palma_Iacobelli.pdf"
+          >
+            Download Resume
+          </a>
         </Col>
+
         <Col>
           <img src={cv1min} className="foto" alt="foto Palma" />
         </Col>
