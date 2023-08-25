@@ -39,7 +39,7 @@ const Portfolio = () => {
                       to="https://github.com/stars/369-Palma/lists/showcase-website-art"
                       target="_blank"
                     >
-                      <Button className="bottone">Repo</Button>
+                      <Button className="bottone">REPO</Button>
                     </Link>
                   </div>
                 </Card.Body>
@@ -67,7 +67,7 @@ const Portfolio = () => {
                       to="https://github.com/stars/369-Palma/lists/capstone-project"
                       target="_blank"
                     >
-                      <Button className="bottone">Repo</Button>
+                      <Button className="bottone">REPO</Button>
                     </Link>
                   </div>
                 </Card.Body>
@@ -90,13 +90,20 @@ const Portfolio = () => {
                   <div className="info">
                     <p className="pt-5">App for weather forecast</p>
                     <p className="mini">TypeScript, vite.js, CSS</p>
-
-                    <Link
-                      to="https://github.com/369-Palma/weather_app_ts.git"
-                      target="_blank"
-                    >
-                      <Button className="bottone">Repo</Button>
-                    </Link>
+                    <div className="d-flex justify-content-center">
+                      <Link
+                        to="https://github.com/369-Palma/weather_app_ts.git"
+                        target="_blank"
+                      >
+                        <Button className="bottone">REPO</Button>
+                      </Link>
+                      <Link
+                        to="https://weather-app-typescript-ruddy.vercel.app"
+                        target="_blank"
+                      >
+                        <Button className="bottone">DEMO</Button>
+                      </Link>
+                    </div>
                   </div>
                 </Card.Body>
               </Card>
@@ -121,7 +128,7 @@ const Portfolio = () => {
                       to="https://github.com/369-Palma/quiz_app_ts.git"
                       target="_blank"
                     >
-                      <Button className="bottone">Repo</Button>
+                      <Button className="bottone">REPO</Button>
                     </Link>
                   </div>
                 </Card.Body>
@@ -153,7 +160,7 @@ const Portfolio = () => {
                       to="https://github.com/VincenzoDePascale/Spring_gestioneEnergia"
                       target="_blank"
                     >
-                      <Button className="bottone">Repo</Button>
+                      <Button className="bottone">REPO</Button>
                     </Link>
                   </div>
                 </Card.Body>
