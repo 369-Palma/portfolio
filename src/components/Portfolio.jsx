@@ -122,13 +122,20 @@ const Portfolio = () => {
                     TypeScript, React, Vite <br />
                     Api esterne: Open Trivia
                   </p>
-
-                  <Link
-                    to="https://github.com/369-Palma/quiz_app_ts.git"
-                    target="_blank"
-                  >
-                    <Button className="bottone">REPO</Button>
-                  </Link>
+                  <div className="d-flex justify-content-center align-items-center">
+                    <Link
+                      to="https://github.com/369-Palma/quiz_app_ts.git"
+                      target="_blank"
+                    >
+                      <Button className="bottone">REPO</Button>
+                    </Link>
+                    <Link
+                      to="https://quiz-app-gz0wp08b7-369-palma.vercel.app"
+                      target="_blank"
+                    >
+                      <Button className="bottone m-2 ">DEMO</Button>
+                    </Link>
+                  </div>
                 </div>
                 {/*  </Card.Body> */}
               </Card>
