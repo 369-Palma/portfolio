@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <Navbar
       expand="md"
-      className=" d-flex navbar navbar-expand-md navbar-dark pb-3"
+      className=" d-flex navbar navbar-expand-md navbar-dark pb-3 ps-md-5"
     >
       <Container className="d-flex flex-row ">
         <Navbar.Toggle
