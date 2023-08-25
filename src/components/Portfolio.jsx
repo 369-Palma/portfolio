@@ -24,14 +24,13 @@ const Portfolio = () => {
                   variant="top"
                   src={artGallery}
                 />
-                {/* <Card.Body className="bottomCard "> */}
-                {/* <Card.Title className="dettagli">Art gallery</Card.Title> */}
+
                 <div className="info">
                   <p className="pt-5">
                     Showcase of an Apulian artist's gallery
                   </p>
                   <p className="mini">
-                    Redux, Javascript, Java, Spring Boot, PostgreSQL
+                    Redux, Javascript, Bootstrap, Java, Spring Boot, PostgreSQL
                   </p>
 
                   <Link
@@ -41,7 +40,6 @@ const Portfolio = () => {
                     <Button className="bottone">REPO</Button>
                   </Link>
                 </div>
-                {/* </Card.Body> */}
               </Card>
             </Col>
             <Col xs={12} md={6}>
@@ -51,15 +49,15 @@ const Portfolio = () => {
                   variant="top"
                   src={easyVacanza}
                 />
-                {/* <Card.Body className="bottomCard"> */}
-                {/* <Card.Title>EasyVacanza</Card.Title> */}
+
                 <div className="info">
                   <p className="pt-5">
                     {" "}
                     Website for searching and booking holidays
                   </p>
                   <p className="mini">
-                    React, Javascript, Java, Spring Boot, PostgreSQL
+                    React, Bootstrap, Javascript, Java, Spring Boot, PostgreSQL,
+                    Faker
                   </p>
 
                   <Link
@@ -69,7 +67,6 @@ const Portfolio = () => {
                     <Button className="bottone">REPO</Button>
                   </Link>
                 </div>
-                {/* </Card.Body> */}
               </Card>
             </Col>
           </Row>
@@ -84,11 +81,13 @@ const Portfolio = () => {
                   variant="top"
                   src={weatherApp}
                 />
-                {/* <Card.Body className="bottomCard"> */}
-                {/* <Card.Title className="dettagli">Weather App</Card.Title> */}
+
                 <div className="info">
                   <p className="pt-5">App for weather forecast</p>
-                  <p className="mini">TypeScript, Vite, CSS</p>
+                  <p className="mini">
+                    TypeScript, Vite, CSS <br />
+                    API: Geocoding API, 3-hour Forecast 5 days
+                  </p>
                   <div className="d-flex justify-content-center align-items-center">
                     <Link
                       to="https://github.com/369-Palma/weather_app_ts.git"
@@ -104,7 +103,6 @@ const Portfolio = () => {
                     </Link>
                   </div>
                 </div>
-                {/* </Card.Body> */}
               </Card>
             </Col>
             <Col xs={12} md={6}>
@@ -114,13 +112,12 @@ const Portfolio = () => {
                   variant="top"
                   src={quizQuest}
                 />
-                {/*  <Card.Body className="bottomCard"> */}
-                {/* <Card.Title>Quiz Quest</Card.Title> */}
+
                 <div className="info">
                   <p className="pt-5"> Multiple choice quiz game app</p>
                   <p className="mini">
                     TypeScript, React, Vite <br />
-                    Api esterne: Open Trivia
+                    API: Open Trivia
                   </p>
                   <div className="d-flex justify-content-center align-items-center">
                     <Link
@@ -137,7 +134,6 @@ const Portfolio = () => {
                     </Link>
                   </div>
                 </div>
-                {/*  </Card.Body> */}
               </Card>
             </Col>
           </Row>
@@ -152,15 +148,12 @@ const Portfolio = () => {
                   variant="top"
                   src={energia}
                 />
-                {/* <Card.Body className="bottomCard"> */}
-                {/* <Card.Title className="dettagli">Gestione energia</Card.Title> */}
+
                 <div className="info">
                   <p className="pt-5">
                     Showcase of an Apulian artist's gallery
                   </p>
-                  <p className="mini">
-                    Redux, Javascript, Java, Spring Boot, PostgreSQL
-                  </p>
+                  <p className="mini">Java, Spring Boot, JUnit 5, PostgreSQL</p>
 
                   <Link
                     to="https://github.com/VincenzoDePascale/Spring_gestioneEnergia"
@@ -169,7 +162,6 @@ const Portfolio = () => {
                     <Button className="bottone">REPO</Button>
                   </Link>
                 </div>
-                {/* </Card.Body> */}
               </Card>
             </Col>
           </Row>

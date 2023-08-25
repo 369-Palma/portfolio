@@ -1,6 +1,5 @@
 html,
 body {
-  /* background-color: #101114; */
   color: seashell;
   width: 100dvw;
   height: 100vh;
@@ -57,7 +56,6 @@ h2 {
 .sottotitoli {
   font-style: italic;
   color: rgb(3, 226, 152);
-  /* text-decoration: underline dotted rgb(3, 226, 152); */
 }
 .App {
   text-align: center;
@@ -209,7 +207,6 @@ p {
   margin-bottom: 1.5em;
 }
 
-/* Imposta la disposizione delle immagini in due righe da 3 in modalità large */
 @media (min-width: 992px) {
   .iconeSkills {
     flex: 0 0 calc(33.333% - 1em);
@@ -328,24 +325,9 @@ p {
   100% {
     transform: translate(0px);
   }
-  /*   100% {
-    transform: translate(300px);
-  } */
 }
 
 /*  PORTFOLIO */
-
-/* .bottomCard {
-  color: seashell;
-  background: rgb(102, 158, 218);
-  background: linear-gradient(
-    155deg,
-    rgba(102, 158, 218, 1) 7%,
-    rgba(46, 67, 89, 1) 31%,
-    rgba(0, 1, 1, 0.2861519607843137) 75%,
-    rgba(31, 188, 189, 0.4514180672268907) 94%
-  );
-} */
 
 .mini {
   font-size: medium;

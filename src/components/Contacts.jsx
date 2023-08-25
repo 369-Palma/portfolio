@@ -52,13 +52,13 @@ const Contacts = () => {
           >
             <FontAwesomeIcon className="icone" icon={faGoogle} />
           </Link>
-          <Link
+          {/*  <Link
             to="#"
             target="_blank"
             className=" me-4 text-reset mb-md-3 fs-4"
           >
             <FontAwesomeIcon className="icone" icon={faInstagram} />
-          </Link>
+          </Link> */}
           <Link
             to="https://www.linkedin.com/in/palma-iacobelli-482521185/?locale=it_IT"
             target="_blank"
