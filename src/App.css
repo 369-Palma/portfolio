@@ -1,0 +1,404 @@
+html,
+body {
+  color: seashell;
+  width: 100dvw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: url("./assets/images/sfondoFigo.png");
+  background-color: #242323;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .content {
+    margin-left: 10rem;
+    padding-top: 5%;
+    padding-bottom: 10%;
+  }
+
+  .boxImg {
+    padding-top: 3em;
+  }
+  .containerAbout {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+}
+
+@media (min-width: 1445px) {
+  .descrizione p {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  .containerAbout {
+    padding-top: 3%;
+    padding-bottom: 4%;
+  }
+  .boxAbout {
+    padding: 0;
+  }
+  .boxImg {
+    margin-top: 5em;
+  }
+
+  .boxContacts {
+    margin-top: 3rem;
+  }
+}
+
+h2 {
+  margin-bottom: 2em;
+}
+.sottotitoli {
+  font-style: italic;
+  color: rgb(3, 226, 152);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+.containerAbout {
+  max-height: fit-content;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+ul {
+  list-style: none;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+Nav.Item Link {
+  margin-right: 30px;
+}
+
+Form.Control {
+  margin-bottom: 5em;
+}
+
+.navBar {
+  background-color: #283653 !important;
+  border: 1 solid seashell !important;
+  color: seashell !important;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  padding-left: 2em;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.nav-link:hover {
+  transform: scale(1.2);
+  color: rgb(3, 226, 152);
+  /* border: 1px solid rgb(3, 226, 152) */
+}
+
+.spaziaturaLink Link {
+  margin-right: 15px;
+}
+
+.foto {
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 8em;
+  box-shadow: 1px 1px 4px 2px rgb(5, 255, 172, 0.39);
+  margin-top: 2em;
+}
+
+.profilo {
+  border-radius: 4em;
+}
+
+/*  CONTACT PAGE */
+
+.icone:hover {
+  color: rgb(3, 226, 152);
+  transform: scale(1);
+}
+
+.campoForm:focus {
+  border: 4px solid rgb(5, 255, 172);
+}
+
+.bordo {
+  animation: BordoColorato 3s linear infinite;
+}
+
+@keyframes BordoColorato {
+  0% {
+    border: 0.5px solid rgb(5, 255, 172);
+  }
+  25% {
+    border: 0.5px solid rgb(11, 238, 219);
+  }
+  50% {
+    border: 0.5px solid rgb(18, 144, 247);
+  }
+  75% {
+    border: 0.5px solid rgb(11, 238, 219);
+  }
+  100% {
+    border: 0.5px solid rgb(5, 255, 172);
+  }
+}
+
+Button,
+h1 {
+  color: rgb(3, 226, 152);
+}
+
+p {
+  line-height: 1.9em;
+  font-size: x-large;
+}
+
+.iconeSkills {
+  margin: 0.5em;
+}
+
+.iconeSkills img {
+  width: 65px;
+  height: 65px;
+  aspect-ratio: 1/1;
+  margin-bottom: 1.5em;
+}
+
+@media (min-width: 992px) {
+  .iconeSkills {
+    flex: 0 0 calc(33.333% - 1em);
+  }
+
+  .frasi,
+  .testo {
+    font-size: xx-large;
+  }
+}
+
+@media (max-width: 767px) {
+  .iconeSkills {
+    flex: 0 0 calc(50% - 1em);
+  }
+  .boxImg {
+    justify-content: left;
+  }
+  .textAbout {
+    font-size: larger;
+  }
+  .frasi {
+    font-size: larger;
+  }
+}
+
+/* HOME */
+.bottoneCv {
+  border: 2px solid rgb(5, 255, 172);
+  color: white;
+  height: 40px;
+  font-weight: bold;
+  font-size: thin;
+  padding: 5px;
+}
+.frasi {
+  text-indent: 10px;
+  margin-right: 23%;
+  margin-left: 23%;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(5, 255, 172);
+}
+.frasi i {
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+
+  padding-left: 50px;
+  -webkit-animation: AlternateText 12s ease-in infinite 0s;
+  -ms-animation: AlternateText 12s ease-in infinite 0s;
+  animation: AlternateText 12s ease-in infinite 0s;
+}
+.frasi i:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+  color: rgb(5, 255, 172);
+}
+.frasi i:nth-child(3) {
+  -webkit-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  animation-delay: 6s;
+  color: rgb(5, 255, 172);
+}
+.frasi i:nth-child(4) {
+  -webkit-animation-delay: 9s;
+  -ms-animation-delay: 9s;
+  animation-delay: 9s;
+  color: rgb(5, 255, 172);
+}
+
+@keyframes AlternateText {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*  ABOUT  */
+.iconeSkills {
+  transition: transform 3s;
+  animation: EntryImg 3s linear 0.5s 1;
+}
+
+.iconeSkills:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes EntryImg {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+
+/*  PORTFOLIO */
+
+.mini {
+  font-size: medium;
+}
+
+.carta {
+  position: relative;
+  overflow: hidden;
+  min-width: min-content;
+  max-height: 43rem;
+  height: 100%;
+}
+
+#carta,
+#cartaQuiz {
+  min-height: 455px;
+}
+
+.info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    148deg,
+    rgb(48 133 55) 25%,
+    rgb(90 176 105 / 79%) 49%,
+    rgba(0, 1, 1, 0.2861519607843137) 75%,
+    rgb(123 215 73 / 45%) 94%
+  );
+
+  color: seashell;
+  font-weight: bold;
+  transition: bottom 1s ease-in-out;
+}
+
+.bottone {
+  background-color: seashell;
+  color: black;
+  border: 2px solid rgb(5, 255, 172) !important;
+}
+
+.bottone:hover {
+  background-color: rgb(5, 255, 172) !important;
+  color: black;
+  border-color: 2 solid black !important;
+}
+
+.carta:hover .info {
+  bottom: 0;
+}
+@keyframes ShowInfo {
+  0% {
+    transform: translateY(0px);
+    padding-top: 0em;
+  }
+  50% {
+    transform: translateY(20em);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-40em);
+    background-color: rgba(5, 255, 172, 0.274);
+    color: black;
+
+    opacity: 1;
+  }
+}
+
+.coverPortfolio {
+  width: 100%;
+  height: 100%;
+}
