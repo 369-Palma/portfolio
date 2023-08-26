@@ -229,7 +229,13 @@ p {
     font-size: larger;
   }
   .frasi {
-    font-size: larger;
+    font-size: medium;
+    margin-left: 0 !important;
+    letter-spacing: 1.5px;
+  }
+  .frasi i {
+    min-width: max-content;
+    padding-left: 30px !important;
   }
 }
 
@@ -330,7 +336,7 @@ p {
 /*  PORTFOLIO */
 
 .mini {
-  font-size: medium;
+  font-size: small;
 }
 
 .carta {
@@ -341,9 +347,15 @@ p {
   height: 100%;
 }
 
-#carta,
-#cartaQuiz {
-  min-height: 455px;
+#carta {
+  min-height: 350px;
+}
+#cartaQuiz,
+#cartaWeather {
+  min-height: 300px;
+}
+#cartaEnergia {
+  min-height: 200px;
 }
 
 .info {

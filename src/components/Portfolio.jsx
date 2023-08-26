@@ -26,7 +26,7 @@ const Portfolio = () => {
                 />
 
                 <div className="info">
-                  <p className="pt-5">
+                  <p className="py-2">
                     Showcase of an Apulian artist's gallery
                   </p>
                   <p className="mini">
@@ -51,7 +51,7 @@ const Portfolio = () => {
                 />
 
                 <div className="info">
-                  <p className="pt-5">
+                  <p className="py-2">
                     {" "}
                     Website for searching and booking holidays
                   </p>
@@ -75,7 +75,7 @@ const Portfolio = () => {
           <Row className="containerWorks my-5 mx-auto ">
             <h3 className="my-4"> FRONTEND </h3>
             <Col xs={12} md={6} className="flex-row mb-4 mb-md-0">
-              <Card className="carta mb-3  h-100 ">
+              <Card className="carta mb-3  h-100 " id="cartaWeather">
                 <Card.Img
                   className="coverPortfolio "
                   variant="top"
@@ -83,7 +83,7 @@ const Portfolio = () => {
                 />
 
                 <div className="info">
-                  <p className="pt-5">App for weather forecast</p>
+                  <p className="py-2">Weather forecast</p>
                   <p className="mini">
                     TypeScript, Vite, CSS <br />
                     API: Geocoding API, 3-hour Forecast 5 days
@@ -114,7 +114,7 @@ const Portfolio = () => {
                 />
 
                 <div className="info">
-                  <p className="pt-5"> Multiple choice quiz game app</p>
+                  <p className="py-2"> Multiple choice quiz game</p>
                   <p className="mini">
                     TypeScript, React, Vite <br />
                     API: Open Trivia
@@ -142,24 +142,22 @@ const Portfolio = () => {
           <Row className="containerWorks mb-5 ">
             <h3 className="my-4"> BACKEND </h3>
             <Col xs={12} md={6} className="flex-row mx-auto">
-              <Card className="carta mb-3">
+              <Card className="carta mb-3" id="cartaEnergia">
                 <Card.Img
                   className="coverPortfolio"
                   variant="top"
                   src={energia}
                 />
 
-                <div className="info">
-                  <p className="pt-5">
-                    Showcase of an Apulian artist's gallery
-                  </p>
+                <div className="info ">
+                  <p className="pt-md-5 fs-5 ">Energy management</p>
                   <p className="mini">Java, Spring Boot, JUnit 5, PostgreSQL</p>
 
                   <Link
                     to="https://github.com/VincenzoDePascale/Spring_gestioneEnergia"
                     target="_blank"
                   >
-                    <Button className="bottone">REPO</Button>
+                    <Button className="bottone ">REPO</Button>
                   </Link>
                 </div>
               </Card>

@@ -14,7 +14,7 @@ import AllPages from "./components/AllPages";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App px-2">
       <BrowserRouter>
         {window.innerWidth <= 767 ? (
           <AllPages />

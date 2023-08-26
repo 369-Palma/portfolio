@@ -24,7 +24,7 @@ const About = () => {
         </Col>
       </Row>
       <Row className="boxImg mx-5 d-flex flex-row justify-content-center  my-auto">
-        <h3 className="sottotitoli pb-3"> Technical skills </h3>
+        <h3 className="sottotitoli pb-3 mt-4"> Technical skills </h3>
         <Col md={3} lg={3} className="iconeSkills">
           <img src={html5} alt="logo html5" />
         </Col>
