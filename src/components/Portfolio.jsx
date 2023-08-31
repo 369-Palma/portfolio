@@ -151,6 +151,10 @@ const Portfolio = () => {
 
                 <div className="info ">
                   <p className="pt-md-5 fs-5 ">Energy management</p>
+                  <p>
+                    Project realized in collaboration with V. DePascale, V.
+                    Maiorana, A. Iamandi, V. Picone and S. Rusco
+                  </p>
                   <p className="mini">Java, Spring Boot, JUnit 5, PostgreSQL</p>
 
                   <Link
