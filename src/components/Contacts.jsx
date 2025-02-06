@@ -36,48 +36,41 @@ const Contacts = () => {
   };
 
   return (
-    <Container className="boxContacts  mx-auto py-3">
+    <Container className="boxContacts mx-auto py-3 mb-4">
       <h3> Questions? </h3>
       <h1> Contact me </h1>
       <Row className="mx-auto d-flex align-items-center justify-content-center text-center mt-5">
         <Col
           xs={12}
           md={2}
-          className="d-flex flex-row flex-md-column mx-auto justify-content-center flex-md-start flex-md-justify-content-space-evenly my-md-auto h-100 mb-3"
+          className="links-social-box d-flex flex-row mx-auto justify-content-center flex-md-column flex-md-start flex-md-justify-content-center my-md-auto mb-3"
         >
           <Link
             to="mailto:palmaiacobelli92@gmail.com"
             target="_blank"
-            className=" me-4 text-reset mb-md-3 fs-4"
+            className=" text-reset mb-md-3 fs-4"
           >
             <FontAwesomeIcon className="icone" icon={faGoogle} />
           </Link>
-          {/*  <Link
-            to="#"
-            target="_blank"
-            className=" me-4 text-reset mb-md-3 fs-4"
-          >
-            <FontAwesomeIcon className="icone" icon={faInstagram} />
-          </Link> */}
           <Link
             to="https://www.linkedin.com/in/palma-iacobelli-482521185/?locale=it_IT"
             target="_blank"
-            className=" me-4 text-reset mb-md-3 fs-4"
+            className=" text-reset mb-md-3 fs-4"
           >
             <FontAwesomeIcon className="icone" icon={faLinkedin} />
           </Link>
           <Link
             to="https://github.com/369-Palma"
             target="_blank"
-            className=" me-4 text-reset mb-md-3 fs-4 "
+            className=" text-reset mb-md-3 fs-4 "
           >
             <FontAwesomeIcon className="icone" icon={faGithub} />
           </Link>
         </Col>
         <Col xs={12} md={10} className="mx-auto mb-xs-3">
-          <Form onSubmit={inviaEmail} className="p-5 bordo">
+          <Form onSubmit={inviaEmail} className="p-5 bordo bg-black" >
             <Form.Group className="mb-4" controlId="formName">
-              <Form.Label className="mb-3">Name:</Form.Label>
+              <Form.Label className="mb-2 d-flex text-start">Name:</Form.Label>
               <Form.Control
                 className="campoForm"
                 name="name"
@@ -89,7 +82,7 @@ const Contacts = () => {
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formEmail">
-              <Form.Label className="mb-3">Email:</Form.Label>
+              <Form.Label className="mb-2 d-flex text-start">Email:</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -101,7 +94,7 @@ const Contacts = () => {
             </Form.Group>
 
             <Form.Group className="mb-4" controlId="formMessage">
-              <Form.Label className="mb-3">Message:</Form.Label>
+              <Form.Label className="mb-2 d-flex text-start">Message:</Form.Label>
               <Form.Control
                 className="campoForm"
                 as="textarea"

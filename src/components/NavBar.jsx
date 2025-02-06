@@ -1,63 +1,72 @@
 import { Nav, Navbar, Row, Col, Container } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const NavBar = () => {
+
+  //States
   const location = useLocation();
   const [showLinks, setShowLinks] = useState(false);
+  const [selectedLink, setSelectedLink] = useState("home")
+
+  //Handlers
+  const handleScrollToSection = (id) => {
+    setSelectedLink(id)
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  //Effects
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "portfolio", "contacts"];
+      for (let section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top >= 0 && rect.top < window.innerHeight / 2) {
+            setSelectedLink(section);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
 
   return (
     <Navbar
       expand="md"
-      className=" d-flex navbar navbar-expand-md navbar-dark pb-3 ps-md-5"
+      className="navbar customNavbar navbar-expand-md navbar-dark fixed-top bg-black pb-3 ps-md-5 "
     >
-      <Container className="d-flex flex-row ">
+      <Container>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           onClick={() => setShowLinks(!showLinks)}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Row
-              className={`w-100 ${
-                showLinks ? "flex-column" : "justify-content-between"
-              }`}
-            >
+            <Row className={`w-100 ${showLinks ? "flex-column" : "justify-content-between"}`}>
               <Col
                 xs={9}
                 md={9}
-                className={`d-flex ${
-                  showLinks
-                    ? "flex-column h-50"
-                    : "flex-row justify-content-around"
-                }`}
+                className={`d-flex ${showLinks ? "flex-column h-50" : "flex-row justify-content-around"}`}
               >
-                <Link to="/" className="nav-link">
+                <Link className={`${selectedLink === "home"? "nav-link-selected" : "nav-link"}  ${selectedLink === "home" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("home")}>
                   Home
                 </Link>
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/offerte" ? "active" : ""
-                  }`}
-                  to="/about"
-                >
+                <Link className={`${selectedLink === "about"? "nav-link-selected" : "nav-link"} ${selectedLink === "about" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("about")}>
                   About
                 </Link>
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/portfolio" ? "active" : ""
-                  }`}
-                  to="/portfolio"
-                >
+                <Link className={`${selectedLink === "portfolio"? "nav-link-selected" : "nav-link"} ${selectedLink === "portfolio" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("portfolio")}>
                   Portfolio
                 </Link>
-
-                <Link
-                  className={`nav-link ${
-                    location.pathname === "/contacts" ? "active" : ""
-                  }`}
-                  to="/contacts"
-                >
+                <Link className={`${selectedLink === "contacts"? "nav-link-selected" : "nav-link"} ${selectedLink === "contacts" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("contacts")}>
                   Contacts
                 </Link>
               </Col>
