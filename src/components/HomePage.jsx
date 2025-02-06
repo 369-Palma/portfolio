@@ -3,10 +3,11 @@ import cv1min from "../assets/images/cv1min.jpg";
 import resume from "../assets/cv/CV Palma Iacobelli Developer Junior - ENG.pdf";
 import { useEffect } from "react";
 
-const HomePage = (isScrolling, currentPage) => {
+const HomePage = ({ isScrolling, currentPage }) => {  // <-- Correzione destrutturazione
+  useEffect(() => {
+    console.log("Parametri ricevuti: ", isScrolling, currentPage);
+  }, [currentPage]);
 
-  useEffect(()=>{console.log("parametri ricevuti: ", isScrolling, currentPage)},[currentPage])
-  
   return (
     <Container className="content w-full mx-auto">
       <Row className="mx-auto content__containercontent d-flex flex-column align-items-center justify-content-center flex-md-row">
@@ -15,7 +16,7 @@ const HomePage = (isScrolling, currentPage) => {
             Hi, <br />
             I'm Palma Iacobelli{" "}
           </p>
-          {(!isScrolling && currentPage === "home") && (
+          {(isScrolling == false && currentPage === "home") && (
             <span className="frasi d-flex w-100 text-center py-auto">
               Jr.
               <i> Web Developer</i>
@@ -23,16 +24,10 @@ const HomePage = (isScrolling, currentPage) => {
               <i> Backend Developer</i>
             </span>
           )}
-
-          <a
-            className="bottoneCv mx-auto mt-5"
-            href={resume}
-            download="Resume_Palma_Iacobelli.pdf"
-          >
+          <a className="bottoneCv mx-auto mt-5" href={resume} download="Resume_Palma_Iacobelli.pdf">
             Download Resume
           </a>
         </Col>
-
         <Col>
           <img src={cv1min} className="foto" alt="foto Palma" />
         </Col>
