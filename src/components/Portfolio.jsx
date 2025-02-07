@@ -8,7 +8,6 @@ import energia from "../assets/images/energia.png";
 
 const Portfolio = () => {
   return (
-    <>
       <Container className="px-auto my-auto mx-auto">
         <h1> My Projects</h1>
 
@@ -17,7 +16,7 @@ const Portfolio = () => {
         <div className="containerWorks d-flex flex-column align-items-center justify-content-center mx-2">
           <Row className="containerWorks mt-4">
             <h3 className="my-4"> FULLSTACK </h3>
-            <Col xs={12} md={6} className="flex-row mb-4  mb-md-0">
+            <Col xs={12} md={6} className="flex-row mb-4 mb-md-0">
               <Card className="carta mb-3">
                 <Card.Img
                   className="coverPortfolio"
@@ -37,7 +36,7 @@ const Portfolio = () => {
                     to="https://github.com/stars/369-Palma/lists/showcase-website-art"
                     target="_blank"
                   >
-                    <Button className="bottone">REPO</Button>
+                    <Button className="bottoneInfo">REPO</Button>
                   </Link>
                 </div>
               </Card>
@@ -64,7 +63,7 @@ const Portfolio = () => {
                     to="https://github.com/stars/369-Palma/lists/capstone-project"
                     target="_blank"
                   >
-                    <Button className="bottone">REPO</Button>
+                    <Button className="bottoneInfo">REPO</Button>
                   </Link>
                 </div>
               </Card>
@@ -93,13 +92,13 @@ const Portfolio = () => {
                       to="https://github.com/369-Palma/weather_app_ts.git"
                       target="_blank"
                     >
-                      <Button className="bottone m-2 ">REPO</Button>
+                      <Button className="bottoneInfo m-2 ">REPO</Button>
                     </Link>
                     <Link
                       to="https://weather-app-typescript-ruddy.vercel.app"
                       target="_blank"
                     >
-                      <Button className="bottone m-2 ">DEMO</Button>
+                      <Button className="bottoneInfo m-2 ">DEMO</Button>
                     </Link>
                   </div>
                 </div>
@@ -124,13 +123,13 @@ const Portfolio = () => {
                       to="https://github.com/369-Palma/quiz_app_ts.git"
                       target="_blank"
                     >
-                      <Button className="bottone">REPO</Button>
+                      <Button className="bottoneInfo">REPO</Button>
                     </Link>
                     <Link
                       to="https://quiz-app-gz0wp08b7-369-palma.vercel.app"
                       target="_blank"
                     >
-                      <Button className="bottone m-2 ">DEMO</Button>
+                      <Button className="bottoneInfo m-2 ">DEMO</Button>
                     </Link>
                   </div>
                 </div>
@@ -162,7 +161,7 @@ const Portfolio = () => {
                     to="https://github.com/VincenzoDePascale/Spring_gestioneEnergia"
                     target="_blank"
                   >
-                    <Button className="bottone ">REPO</Button>
+                    <Button className="bottoneInfo ">REPO</Button>
                   </Link>
                 </div>
               </Card>
@@ -170,7 +169,6 @@ const Portfolio = () => {
           </Row>
         </div>
       </Container>
-    </>
   );
 };
 

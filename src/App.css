@@ -143,6 +143,7 @@ Form.Control {
 .nav-link {
   margin-right: 15px;
   letter-spacing: 1.2px;
+  cursor:pointer;
 }
 
 .nav-link-selected{
@@ -156,6 +157,8 @@ Form.Control {
   /* transform: scale(1.2); */
   font-weight: 700;
   color: rgb(3, 226, 152);
+  font-weight: 500;
+  font-style: italic;
   /* border: 1px solid rgb(3, 226, 152) */
 }
 
@@ -184,7 +187,8 @@ Form.Control {
   padding:10px 15px 0 15px;
   margin:0;
   border-radius:8em;
-  border: 1px solid #848c9449;
+  border: 1px solid rgba(5, 255, 172, 0.301);
+  /* border: 1px solid #848c9449; */
   /* animation: BordoColorato 3s linear infinite; */
 }
 
@@ -193,7 +197,7 @@ Form.Control {
 }
 
 .icone:hover {
-  color: rgb(3, 226, 152);
+  color: rgba(3, 226, 152, 0.662);
   transform: scale(1);
 }
 
@@ -301,14 +305,22 @@ p {
 }
 
 /* HOME */
-.bottoneCv {
-  border: 2px solid rgb(5, 255, 172);
-  color: white;
-  height: 40px;
-  font-weight: bold;
-  font-size: thin;
-  padding: 5px;
+.bottoneCv, .bottone {
+  border: 1px solid rgb(5, 255, 172);
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.908);
+  font-style:italic;
+  padding: 10px ;
+  background-color: transparent;
+  letter-spacing:1.2px;
+  text-align:center
 }
+
+.bottoneCv:hover, .bottone :hover{
+  background-color: rgba(1, 28, 19, 0.704) !important;
+  border-color: 1px solid rgb(0, 0, 0) !important;
+}
+
 .frasi {
   text-indent: 10px;
   margin-right: 23%;
@@ -398,6 +410,8 @@ p {
 
 .mini {
   font-size: small;
+  font-style:italic;
+  letter-spacing: 1.2px;
 }
 
 .carta {
@@ -405,7 +419,7 @@ p {
   overflow: hidden;
   min-width: min-content;
   max-height: 43rem;
-  height: 100%;
+  height: auto;
 }
 
 #carta {
@@ -424,30 +438,44 @@ p {
   bottom: -100%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background: linear-gradient(
+    148deg,
+    rgba(0, 10, 1, 0.549) 25%,
+    rgba(6, 57, 14, 0.877) 49%,
+    rgb(0, 1, 1) 75%,
+    rgb(123 215 73 / 45%) 94%
+  );
+  /* background: linear-gradient(
     148deg,
     rgb(48 133 55) 25%,
     rgb(90 176 105 / 79%) 49%,
     rgba(0, 1, 1, 0.2861519607843137) 75%,
     rgb(123 215 73 / 45%) 94%
-  );
+  ); */
 
   color: seashell;
   font-weight: bold;
   transition: bottom 1s ease-in-out;
 }
 
-.bottone {
-  background-color: seashell;
-  color: black;
-  border: 2px solid rgb(5, 255, 172) !important;
+.bottoneInfo {
+  background-color: rgba(0, 0, 0, 0.705);
+  color: white;
+  border: 1px solid rgb(5, 255, 172) !important;
+  margin-bottom:1em;
+}
+
+.bottoneInfo:hover{
+  background-color: rgba(1, 28, 19, 0.704) !important;
+  color: rgba(255, 255, 255, 0.699);
+  border:1px solid rgba(5, 255, 172, 0.318) !important;
 }
 
 .bottone:hover {
-  background-color: rgb(5, 255, 172) !important;
-  color: black;
-  border-color: 2 solid black !important;
+  background-color: rgba(1, 28, 19, 0.704) !important;
+  color: rgba(255, 255, 255, 0.699);
+  border: 1px solid black !important;
 }
 
 .carta:hover .info {

@@ -57,18 +57,18 @@ const NavBar = () => {
                 md={9}
                 className={`d-flex ${showLinks ? "flex-column h-50" : "flex-row justify-content-around"}`}
               >
-                <Link className={`${selectedLink === "home"? "nav-link-selected" : "nav-link"}  ${selectedLink === "home" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("home")}>
+                <a className={`${selectedLink === "home"? "nav-link-selected" : "nav-link"}  ${selectedLink === "home" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("home")}>
                   Home
-                </Link>
-                <Link className={`${selectedLink === "about"? "nav-link-selected" : "nav-link"} ${selectedLink === "about" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("about")}>
+                </a>
+                <a className={`${selectedLink === "about"? "nav-link-selected" : "nav-link"} ${selectedLink === "about" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("about")}>
                   About
-                </Link>
-                <Link className={`${selectedLink === "portfolio"? "nav-link-selected" : "nav-link"} ${selectedLink === "portfolio" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("portfolio")}>
+                </a>
+                <a className={`${selectedLink === "portfolio"? "nav-link-selected" : "nav-link"} ${selectedLink === "portfolio" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("portfolio")}>
                   Portfolio
-                </Link>
-                <Link className={`${selectedLink === "contacts"? "nav-link-selected" : "nav-link"} ${selectedLink === "contacts" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("contacts")}>
+                </a>
+                <a className={`${selectedLink === "contacts"? "nav-link-selected" : "nav-link"} ${selectedLink === "contacts" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("contacts")}>
                   Contacts
-                </Link>
+                </a>
               </Col>
             </Row>
           </Nav>

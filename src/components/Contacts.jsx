@@ -106,9 +106,9 @@ const Contacts = () => {
               />
             </Form.Group>
 
-            <Button className="bottone" type="submit">
+            <button className="bottone" type="submit">
               Submit
-            </Button>
+            </button>
           </Form>
         </Col>
       </Row>

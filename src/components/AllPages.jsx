@@ -30,7 +30,9 @@ const AllPages = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setCurrentPage(entry.target.id);
+          console.log("current page: ", entry.target.id )
         }
+        
       });
     };
 
@@ -48,11 +50,16 @@ const AllPages = () => {
     };
   }, []);
 
+  useEffect(()=>{
+    if(!currentPage !== "Home") return
+  window.location.reload()}, [currentPage])
+
+
   return (
     <Container style={{width:"100%"}}>
       <NavBar />
       <Row clasName="d-flex flex-column justify-content-center align-items-center ">
-        <Col xs={12} id="home">
+        <Col xs={12} id="home" ref={sectionsRef.home}>
           <HomePage isScrolling={isScrolling} currentPage={currentPage}/>
         </Col>
         <Col xs={12} id="about" className="my-5" ref={sectionsRef.about}>
