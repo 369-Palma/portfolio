@@ -15,8 +15,10 @@ import AllPages from "./components/AllPages";
 function App() {
   return (
     <div className="App px-2">
-      <BrowserRouter>
-        {window.innerWidth <= 767 ? (
+      
+      <BrowserRouter >
+      <AllPages/>
+        {/* {window.innerWidth <= 767 ? (
           <AllPages />
         ) : (
           <>
@@ -36,7 +38,7 @@ function App() {
               />
             </Routes>
           </>
-        )}
+        )} */}
       </BrowserRouter>
     </div>
   );
