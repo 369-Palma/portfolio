@@ -9,7 +9,6 @@ import { useEffect, useRef, useState } from "react";
 const AllPages = () => {
 
   const [currentPage, setCurrentPage] = useState("home");
-  const [isScrolling, setIsScrolling] = useState(false);
 
   // Creiamo le referenze per le sezioni
   const sectionsRef = {
@@ -21,9 +20,9 @@ const AllPages = () => {
 
   useEffect(() => {
     const observerOptions = {
-      root: null, // Usa il viewport
+      root: null, 
       rootMargin: "0px",
-      threshold: 0.5, // Quando almeno il 50% della sezione è visibile
+      threshold: currentPage === "home"? 0.5 : 0.3, 
     };
 
     const observerCallback = (entries) => {
@@ -50,17 +49,17 @@ const AllPages = () => {
     };
   }, []);
 
-  useEffect(()=>{
-    if(!currentPage !== "Home") return
-  window.location.reload()}, [currentPage])
+  /* useEffect(()=>{
+    if(!currentPage !== "home") return
+  window.location.reload()}, [currentPage]) */
 
 
   return (
-    <Container style={{width:"100%"}}>
+    <Container className="w-full mt-4">
       <NavBar />
-      <Row clasName="d-flex flex-column justify-content-center align-items-center ">
+      <Row clasName="link-list d-flex flex-column justify-content-center align-items-center ">
         <Col xs={12} id="home" ref={sectionsRef.home}>
-          <HomePage isScrolling={isScrolling} currentPage={currentPage}/>
+          <HomePage currentPage={currentPage}/>
         </Col>
         <Col xs={12} id="about" className="my-5" ref={sectionsRef.about}>
           <About />

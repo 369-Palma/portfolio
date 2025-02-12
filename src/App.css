@@ -148,7 +148,7 @@ Form.Control {
 
 .nav-link-selected{
   margin-right: 15px;
-  margin-top:7px;
+  /* margin-top:7px; */
   font-weight: 700;
   color: rgb(3, 226, 152);
 }
@@ -162,9 +162,26 @@ Form.Control {
   /* border: 1px solid rgb(3, 226, 152) */
 }
 
-.spaziaturaLink Link {
-  margin-right: 15px;
+
+.links-in-column{
+  display: flex;
+  justify-content:center;
+  height:auto;
+  width: 105px;
+  /* border-right:1px solid rgba(128, 128, 128, 0.146);
+  border-bottom:1px solid rgba(128, 128, 128, 0.146); */
+  padding-bottom:10px;
+  border-radius:5px;
 }
+
+.links-in-line{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  height: 50px;
+}
+
+
 
 .foto {
   width: 200px;
@@ -302,7 +319,30 @@ p {
   .links-social-box{
     padding: 8px 20px;
   }
+  .customNavbar{
+      width: min-content;
+      border-radius: 5px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      border-right:1px solid rgba(128, 128, 128, 0.146);
+      border-bottom:1px solid rgba(128, 128, 128, 0.146) ;
+    }
+
+    .link-list{
+      display: flex ;
+      flex-direction: column;
+      height:auto;
+      flex-wrap:wrap !important;
+    }
+    .linksContainer{
+      height:auto;
+      flex-wrap:wrap !important;
+    }
 }
+
+
 
 /* HOME */
 .bottoneCv, .bottone {
@@ -426,9 +466,18 @@ p {
   min-height: 350px;
 }
 #cartaQuiz,
-#cartaWeather {
+#cartaWeather,
+#cartaBlog
+{
   min-height: 300px;
 }
+
+
+/* #storyX {
+  min-height:500px;
+} */
+
+
 #cartaEnergia {
   min-height: 200px;
 }

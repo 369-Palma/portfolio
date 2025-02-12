@@ -2,6 +2,9 @@ import { Container, Col, Row, Button, Card } from "react-bootstrap";
 import quizQuest from "../assets/images/quizQuest.png";
 import artGallery from "../assets/images/artGallery.png";
 import easyVacanza from "../assets/images/easyVacanza.png";
+import storyX from "../assets/images/storyX.png";
+import myBlog from "../assets/images/myBlog.png";
+import accurso from "../assets/images/accurso.png";
 import { Link } from "react-router-dom";
 import weatherApp from "../assets/images/weatherApp.png";
 import energia from "../assets/images/energia.png";
@@ -68,11 +71,13 @@ const Portfolio = () => {
                 </div>
               </Card>
             </Col>
+
           </Row>
 
           {/* FRONTEND */}
           <Row className="containerWorks my-5 mx-auto ">
             <h3 className="my-4"> FRONTEND </h3>
+            {/* Meteo app */}
             <Col xs={12} md={6} className="flex-row mb-4 mb-md-0">
               <Card className="carta mb-3  h-100 " id="cartaWeather">
                 <Card.Img
@@ -104,6 +109,8 @@ const Portfolio = () => {
                 </div>
               </Card>
             </Col>
+
+            {/* QuizGame */}
             <Col xs={12} md={6}>
               <Card className="carta mb-3 " id="cartaQuiz">
                 <Card.Img
@@ -129,12 +136,113 @@ const Portfolio = () => {
                       to="https://quiz-app-gz0wp08b7-369-palma.vercel.app"
                       target="_blank"
                     >
-                      <Button className="bottoneInfo m-2 ">DEMO</Button>
+                      <Button className="bottoneInfo ms-2">DEMO</Button>
                     </Link>
                   </div>
                 </div>
               </Card>
             </Col>
+
+            {/* MyBlog */}
+            <Col xs={12} md={6}>
+              <Card className="carta mb-3" id="carta">
+                <Card.Img
+                  className="coverPortfolio"
+                  variant="top"
+                  src={myBlog}
+                />
+
+                <div className="info">
+                  <p className="py-2"> Raccolta di storie sulla natura e pubblicazioni scientifiche realizzate da me</p>
+                  <p className="mini">
+                    TypeScript, React, NextJs, TailwindCss <br/>
+                  </p>
+                  <div className="d-flex justify-content-center align-items-center">
+                    <Link
+                      to="https://github.com/369-Palma/my_blog/branches"
+                      target="_blank"
+                    >
+                      <Button className="bottoneInfo">REPO</Button>
+                    </Link>
+                    <Link
+                      to="https://my-blog-ten-sepia.vercel.app/"
+                      target="_blank"
+                    >
+                      <Button className="bottoneInfo ms-2">DEMO</Button>
+                    </Link>
+                  </div>
+                </div>
+              </Card>
+            </Col>
+            
+          </Row>
+
+          {/* BACKOFFICE */}
+
+          <Row className="containerWorks mb-5 ">
+            <h3 className="my-4"> BACKOFFICE </h3>
+             {/* StoryX */}
+            <Col xs={12} md={6}>
+            <Card className="carta mb-3 " id="storyX">
+              <Card.Img
+                className="coverPortfolio"
+                variant="top"
+                src={storyX }
+              />
+              <div className="info">
+                <p className="py-2"> Backoffice for Author Management & Story Creation</p>
+                <p className="mini">
+                  Typescript, Node.js, React
+                </p>
+                <div className="d-flex justify-content-center align-items-center">
+                  {/* <Link
+                    to="https://github.com/369-Palma/quiz_app_ts.git"
+                    target="_blank"
+                  >
+                    <Button className="bottoneInfo">REPO</Button>
+                  </Link> */}
+                  {/*  <Link
+                    to="https://quiz-app-gz0wp08b7-369-palma.vercel.app"
+                    target="_blank"
+                  >
+                    <Button className="bottoneInfo ms-2">DEMO</Button>
+                  </Link> */}
+                </div>
+              </div>
+            </Card>
+            </Col>
+            
+            {/* Accurso */}
+            <Col xs={12} md={6}>
+            <Card className="carta mb-3 " id="accurso">
+              <Card.Img
+                className="coverPortfolio"
+                variant="top"
+                src={accurso }
+              />
+              <div className="info">
+                <p className="py-2"> Backoffice for car rental, carwash reservations</p>
+                <p className="mini">
+                  Typescript, Node.js, React
+                </p>
+                <div className="d-flex justify-content-center align-items-center">
+                  {/* <Link
+                    to="https://github.com/369-Palma/quiz_app_ts.git"
+                    target="_blank"
+                  >
+                    <Button className="bottoneInfo">REPO</Button>
+                  </Link> */}
+                  {/*  <Link
+                    to="https://quiz-app-gz0wp08b7-369-palma.vercel.app"
+                    target="_blank"
+                  >
+                    <Button className="bottoneInfo ms-2">DEMO</Button>
+                  </Link> */}
+                </div>
+              </div>
+            </Card>
+            </Col>
+
           </Row>
 
           {/* BACKEND */}

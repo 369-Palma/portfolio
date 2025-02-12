@@ -1,13 +1,9 @@
-import { Col, Row, Container, Button } from "react-bootstrap";
+import { Col, Row, Container } from "react-bootstrap";
 import cv1min from "../assets/images/cv1min.jpg";
 import resume from "../assets/cv/CV Palma Iacobelli Developer Junior - ENG.pdf";
-import { useEffect } from "react";
 
-const HomePage = ({ isScrolling, currentPage }) => {  
-  useEffect(() => {
-    console.log("Parametri ricevuti: ", isScrolling, currentPage);
-  }, [currentPage]);
-
+const HomePage = ({ currentPage }) => {  
+ 
   return (
     <Container className="content w-full mx-auto">
       <Row className="mx-auto content__containercontent d-flex flex-column align-items-center justify-content-center flex-md-row">
@@ -16,7 +12,7 @@ const HomePage = ({ isScrolling, currentPage }) => {
             Hi, <br />
             I'm Palma Iacobelli{" "}
           </p>
-          {(isScrolling == false && currentPage === "home") && (
+          {(currentPage === "home") && (
             <span className="frasi d-flex w-100 text-center py-auto">
               Jr.
               <i> Web Developer</i>

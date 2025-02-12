@@ -7,7 +7,7 @@ const NavBar = () => {
   //States
   const location = useLocation();
   const [showLinks, setShowLinks] = useState(false);
-  const [selectedLink, setSelectedLink] = useState("home")
+  const [selectedLink, setSelectedLink] = useState("")
 
   //Handlers
   const handleScrollToSection = (id) => {
@@ -46,16 +46,16 @@ const NavBar = () => {
     >
       <Container>
         <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
+          /* aria-controls="basic-navbar-nav" */
           onClick={() => setShowLinks(!showLinks)}
         />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Row className={`w-100 ${showLinks ? "flex-column" : "justify-content-between"}`}>
+            <Row className={ `mb-0 ${showLinks ? "links-in-column" : "links-in-line"}`}>
               <Col
                 xs={9}
                 md={9}
-                className={`d-flex ${showLinks ? "flex-column h-50" : "flex-row justify-content-around"}`}
+                className= { `d-flex align-items-center ${showLinks ? "flex-column h-50" : "d-flex align-items-center "}`}
               >
                 <a className={`${selectedLink === "home"? "nav-link-selected" : "nav-link"}  ${selectedLink === "home" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("home")}>
                   Home
@@ -63,10 +63,10 @@ const NavBar = () => {
                 <a className={`${selectedLink === "about"? "nav-link-selected" : "nav-link"} ${selectedLink === "about" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("about")}>
                   About
                 </a>
-                <a className={`${selectedLink === "portfolio"? "nav-link-selected" : "nav-link"} ${selectedLink === "portfolio" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("portfolio")}>
+                <a className={`ps-3 ${selectedLink === "portfolio"? "nav-link-selected" : "nav-link"} ${selectedLink === "portfolio" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("portfolio")}>
                   Portfolio
                 </a>
-                <a className={`${selectedLink === "contacts"? "nav-link-selected" : "nav-link"} ${selectedLink === "contacts" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("contacts")}>
+                <a className={`ps-3 ${selectedLink === "contacts"? "nav-link-selected" : "nav-link"} ${selectedLink === "contacts" ? "nav-link-selected" : ""}`} onClick={() => handleScrollToSection("contacts")}>
                   Contacts
                 </a>
               </Col>
