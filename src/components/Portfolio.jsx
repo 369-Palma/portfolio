@@ -153,7 +153,7 @@ const Portfolio = () => {
                 />
 
                 <div className="info">
-                  <p className="py-2"> Raccolta di storie sulla natura e pubblicazioni scientifiche realizzate da me</p>
+                  <p className="py-2"> Collections of stories and scientific publications</p>
                   <p className="mini">
                     TypeScript, React, NextJs, TailwindCss <br/>
                   </p>
@@ -190,7 +190,7 @@ const Portfolio = () => {
                 src={storyX }
               />
               <div className="info">
-                <p className="py-2"> Backoffice for Author Management & Story Creation</p>
+                <p className="py-2 px-3"> Backoffice for Author Management & Story Creation</p>
                 <p className="mini">
                   Typescript, Node.js, React
                 </p>

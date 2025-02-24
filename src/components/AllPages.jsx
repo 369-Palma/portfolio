@@ -10,7 +10,7 @@ const AllPages = () => {
 
   const [currentPage, setCurrentPage] = useState("home");
 
-  // Creiamo le referenze per le sezioni
+  // reference creation for each session
   const sectionsRef = {
     home: useRef(null),
     about: useRef(null),
@@ -37,7 +37,7 @@ const AllPages = () => {
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-    // Osserviamo ogni sezione
+    // Observer for each session
     Object.values(sectionsRef).forEach((ref) => {
       if (ref.current) observer.observe(ref.current);
     });
@@ -48,10 +48,6 @@ const AllPages = () => {
       });
     };
   }, []);
-
-  /* useEffect(()=>{
-    if(!currentPage !== "home") return
-  window.location.reload()}, [currentPage]) */
 
 
   return (

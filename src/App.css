@@ -226,6 +226,7 @@ Form.Control {
 .campoForm:focus {
   border: 2px solid rgb(5, 255, 172);
   background-color: rgba(46, 45, 45, 0.236);
+  color:white;
 }
 
 .campoForm::placeholder {
